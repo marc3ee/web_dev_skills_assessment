@@ -13,6 +13,7 @@
 
 body {
     font-family: var(--font-family);
+    background-color: #FFFFFF;
 }
 
 /* Hero Section Styles */
@@ -75,3 +76,42 @@ body {
     font-weight: 600;
 }
 
+/* Section Styles */
+
+.section {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 50px;
+}
+
+.section-content-wrapper {
+    align-items: center;
+    justify-content: center;
+}
+
+.section-text-wrapper {
+    text-align: center;
+    color: var(--cta-button-color);
+    font-size: 32px;
+}
+
+.section-details-wrapper {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 35px;
+}
+
+.section-details-1, .section-details-2, .section-details-3, .section-details-4 {
+    width: 355px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
