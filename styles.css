@@ -4,3 +4,42 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --cta-bg-color: #E6E6E6;
+}
+
+.hero {
+    position: relative;
+
+    .img-wrapper {
+        height: 714px;
+        overflow: hidden;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        display: block;
+        transform: translateY(-28px);
+        margin-top: -50px;
+    }
+}
+
+.hero-text {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+
+    h1{
+        margin-bottom: 15px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: var(--font-family);
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
