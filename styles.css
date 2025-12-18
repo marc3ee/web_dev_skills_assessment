@@ -9,6 +9,8 @@
     --cta-bg-color: #E6E6E6;
     --cta-button-color: #0C121C;
     --white-text-color: #FFFFFF;
+    --versatility-head-bg-color: #000000;
+    --versatility-main-content-bg-color: #6E7175;
 }
 
 body {
@@ -114,4 +116,18 @@ body {
 .title {
     font-size: 32px;
     margin-bottom: 15px;
+}
+
+/* Versatility Section Styles */
+
+.versatility-head {
+    height: auto;
+    width: 100%;
+    background-color: var(--versatility-head-bg-color);
+    color: var(--white-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
 }
