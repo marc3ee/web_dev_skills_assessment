@@ -144,7 +144,7 @@ body {
     padding-bottom: 80px;
 }
 
-h3 {
+h2 {
     text-align: center;
     color: var(--white-text-color);
     font-size: 36px;
@@ -1200,21 +1200,17 @@ h3 {
     line-height: 1.5;
 }
 
-/* =========================
-   RESPONSIVE ADJUSTMENTS
-   ========================= */
+/* Responsive Styles */
 
-/* ---------- Tablets (≤1024px) ---------- */
 @media (max-width: 1024px) {
 
     /* Global spacing */
     .section,
     .versatility-main-content,
     .performance-main-content {
-        padding: 50px 30px;
+        padding: 40px 30px;
     }
 
-    /* Hero */
     .hero-text {
         left: 30px;
         top: 40px;
@@ -1232,7 +1228,7 @@ h3 {
         flex-wrap: wrap;
         height: auto;
         gap: 15px;
-        padding: 30px;
+        padding: 20px 30px;
         justify-content: center;
     }
 
@@ -1241,11 +1237,21 @@ h3 {
         min-width: 280px;
     }
 
-    /* Section details */
+    .view-inventory-cta-wrapper,
+    .get-a-quote-cta-wrapper,
+    .value-your-trade-cta-wrapper,
+    .get-preapproved-cta-wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
     .section-details-wrapper {
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        margin-top: 30px;
     }
 
     .section-details-1, .section-details-2, .section-details-3, .section-details-4 {
@@ -1253,13 +1259,12 @@ h3 {
         min-width: 300px;
     }
 
-    /* Two-column sections become stacked */
     .versatility-section-1,
     .versatility-section-2,
     .versatility-section-4,
     .capability-section-1 {
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
         width: 100%;
     }
 
@@ -1276,14 +1281,14 @@ h3 {
         text-align: center;
     }
 
-    /* Three-column sections become two */
     .versatility-section-3,
     .capability-section-2,
     .acce-pack-main-content,
     .bap-sec-main-content-1 {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
+        margin-top: 40px;
     }
 
     .ver-sec-3-left,
@@ -1304,7 +1309,6 @@ h3 {
         text-align: center;
     }
 
-    /* Technology sections stack image + text */
     .technology-section-1,
     .technology-section-2,
     .technology-section-3,
@@ -1312,9 +1316,10 @@ h3 {
     .technology-section-5,
     .technology-section-6 {
         flex-direction: column;
-        padding: 30px;
-        gap: 30px;
+        padding: 20px;
+        gap: 20px;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .tech-sec-1-img-wrapper,
@@ -1324,7 +1329,7 @@ h3 {
     .tech-sec-5-img-wrapper,
     .tech-sec-6-img-wrapper {
         height: auto;
-        max-height: 300px;
+        max-height: 250px;
         width: 100%;
     }
 
@@ -1339,17 +1344,43 @@ h3 {
         width: 100%;
     }
 
-    /* Performance section */
+    .versatility-main-content {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .ver-1-img-wrapper,
+    .ver-3-img-wrapper {
+        margin-top: 30px;
+    }
+
+    #exterior,
+    #interior {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .performance-main-content {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .perf-sec-img-wrapper {
         width: 80%;
         height: auto;
+        margin: 30px auto;
     }
 
     .car-features-wrapper {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
+        margin-top: 15px;
     }
 
     .feature-1, .feature-2, .feature-3, .feature-4 {
@@ -1357,17 +1388,27 @@ h3 {
         min-width: 200px;
     }
 
-    /* Outbound */
     .oub-sec-img-wrapper {
         width: 90%;
         height: auto;
+        margin-top: 15px;
     }
 
-    /* BAP sections */
+    .accessory-packs-subsection {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 50px 25px;
+    }
+
+    #acce-pack-head-subtext {
+        margin-top: 15px;
+    }
+
     .bap-sec-main-content-2 {
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 30px;
         justify-content: center;
+        margin-top: 40px;
     }
 
     .bap-2-left, .bap-2-right {
@@ -1377,7 +1418,16 @@ h3 {
         text-align: center;
     }
 
-    /* Center text elements */
+    .build-and-price-section {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    #bap-header-text {
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
     .ver-sec-1-text,
     .ver-sec-1-desc,
     .ver-sec-2-text,
@@ -1396,21 +1446,21 @@ h3 {
     .bap-desc {
         text-align: center;
         width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
-    /* Center headers */
     #exterior, #interior, #capability-header-text, #technology-header-text,
     #performance-header-text, #outbound-header-text, #acce-pack-head-text,
     #bap-header-text {
         text-align: center;
+        margin-bottom: 30px;
     }
 }
 
-/* ---------- Mobile (≤768px) ---------- */
 @media (max-width: 768px) {
 
-    /* Typography */
-    h3 {
+    h2 {
         font-size: 28px;
         text-align: center;
     }
@@ -1424,7 +1474,6 @@ h3 {
         text-align: center;
     }
 
-    /* Hero */
     .hero-section {
         background-color: #000000;
     }
@@ -1432,7 +1481,7 @@ h3 {
     .hero-text {
         position: static;
         text-align: center;
-        padding: 40px 20px 30px;
+        padding: 30px 15px 20px;
         color: #FFFFFF;
         background-color: rgba(0, 0, 0, 0.7);
         width: 100%;
@@ -1442,9 +1491,9 @@ h3 {
     }
 
     .hero-text h1 {
-        font-size: 32px;
+        font-size: 100px;
         line-height: 1.3;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
@@ -1472,7 +1521,6 @@ h3 {
         display: none;
     }
 
-    /* Force all multi-column sections into single column */
     .section-details-wrapper,
     .versatility-section-1,
     .versatility-section-2,
@@ -1484,8 +1532,13 @@ h3 {
     .bap-sec-main-content-1,
     .bap-sec-main-content-2 {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         align-items: center;
+    }
+
+    .section-details-wrapper {
+        margin-top: 30px;
+        gap: 25px;
     }
 
     .section-details-1,
@@ -1520,17 +1573,49 @@ h3 {
         text-align: center;
     }
 
-    /* Section spacing */
     .section {
-        padding: 40px 20px;
+        padding: 30px 15px;
     }
 
-    /* Images scale better */
+    .view-inventory-cta-wrapper,
+    .get-a-quote-cta-wrapper,
+    .value-your-trade-cta-wrapper,
+    .get-preapproved-cta-wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .view-inventory-cta-button,
+    .get-a-quote-cta-button,
+    .value-your-trade-cta-button,
+    .get-preapproved-cta-button {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .versatility-main-content {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .ver-1-img-wrapper,
-    .ver-3-img-wrapper,
-    .perf-sec-img-wrapper {
+    .ver-3-img-wrapper {
+        margin-top: 20px;
         height: auto;
         width: 100%;
+    }
+
+    #exterior,
+    #interior {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .ver-1-img-wrapper img,
@@ -1539,26 +1624,34 @@ h3 {
         height: auto;
     }
 
-    /* CTA buttons */
-    .view-inventory-cta-button,
-    .get-a-quote-cta-button,
-    .value-your-trade-cta-button,
-    .get-preapproved-cta-button {
-        width: 100%;
-        max-width: 300px;
+    .performance-main-content {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
-    /* Performance */
     .perf-sec-img-wrapper {
         width: 100%;
         height: auto;
+        margin: 20px auto;
+    }
+
+    #performance-header-text {
+        margin-bottom: 30px;
+    }
+
+    #performance-subheader-text {
+        margin-top: -20px;
+        margin-bottom: 20px;
     }
 
     .car-features-wrapper {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
         align-items: center;
         width: 100%;
+        margin-top: 15px;
     }
 
     .feature-1, .feature-2, .feature-3, .feature-4 {
@@ -1567,7 +1660,6 @@ h3 {
         text-align: center;
     }
 
-    /* Technology sections */
     .technology-section-1,
     .technology-section-2,
     .technology-section-3,
@@ -1575,15 +1667,28 @@ h3 {
     .technology-section-5,
     .technology-section-6 {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
+        margin-bottom: 20px;
+        gap: 15px;
+    }
+
+    #technology-header-text {
         margin-bottom: 30px;
     }
 
-    /* Outbound image */
+    .capability-head {
+        margin-bottom: 30px;
+    }
+
+    #capability-header-text {
+        margin-bottom: 30px;
+    }
+
     .oub-sec-img-wrapper {
         width: 100%;
         height: auto;
-        padding: 0 20px;
+        padding: 0 15px;
+        margin-top: 10px;
     }
 
     .oub-sec-img-wrapper img {
@@ -1591,18 +1696,54 @@ h3 {
         height: auto;
     }
 
-    /* Accessory packs */
-    .accessory-packs-subsection {
-        padding: 40px 20px;
+    #outbound-header-text {
+        margin-bottom: 30px;
     }
 
-    /* Footer spacing */
+    .accessory-packs-subsection {
+        padding: 30px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #acce-pack-head-subtext {
+        margin-top: 15px;
+    }
+
+    .acce-pack-main-content {
+        margin-top: 30px;
+    }
+
+    /* Build and price */
+    .build-and-price-section {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    #bap-header-text {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .bap-sec-main-content-1,
+    .bap-sec-main-content-2 {
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .versatility-head,
+    .performance-head,
+    .outbound-head,
+    .capability-head,
+    .technology-head {
+        margin-bottom: 30px;
+    }
+
     .disclaimers-section {
-        margin: 50px 20px;
+        margin: 40px 15px 30px;
         text-align: center;
     }
 
-    /* Center all text elements */
     #exterior, #interior, #performance-subheader-text,
     #outbound-subheader-text, #acce-pack-head-subtext,
     .ver-sec-1-desc, .ver-sec-2-desc, .ver-sec-3-desc, .ver-sec-4-desc,
@@ -1611,30 +1752,46 @@ h3 {
     .acce-pack-desc, .bap-desc, .car-desc-subtext {
         text-align: center;
         padding: 0 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ver-sec-1-text,
+    .ver-sec-2-text,
+    .ver-sec-3-text,
+    .ver-sec-4-text,
+    .cap-sec-1-text,
+    .cap-sec-2-text,
+    .acce-pack-text,
+    .bap-text {
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 }
 
-/* ---------- Small Phones (≤480px) ---------- */
-@media (max-width: 480px) {
+@media (max-width: 480px){
 
     .hero-text {
-        padding: 30px 15px;
+        padding: 20px 10px 15px;
     }
 
     .hero-text h1 {
-        font-size: 24px;
-        text-align: center;
+        font-size: 36px;
+        margin: 10px;
+
     }
 
     .hero-text p {
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
+        margin: 15px;
     }
 
-    h3 {
-        font-size: 24px;
+    h2 {
+        font-size: 32px;
         text-align: center;
         padding: 0 10px;
+        margin-bottom: 15px;
     }
 
     .section-text-wrapper {
@@ -1643,19 +1800,25 @@ h3 {
         padding: 0 10px;
     }
 
-    /* Headers and titles */
+    .title {
+        font-size: 26px;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+
     #capability-header-text,
     #technology-header-text,
     #performance-header-text,
     #outbound-header-text,
     #bap-header-text {
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
-        padding: 0 15px;
-        margin-bottom: 30px;
+        padding: 0 10px;
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
 
-    /* Section text */
     .ver-sec-1-text,
     .ver-sec-2-text,
     .ver-sec-3-text,
@@ -1671,28 +1834,54 @@ h3 {
     .acce-pack-text,
     .bap-text,
     .car-desc-name {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
         padding: 0 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
-    /* CTA sections */
     .view-inventory-cta-wrapper,
     .get-a-quote-cta-wrapper,
     .value-your-trade-cta-wrapper,
     .get-preapproved-cta-wrapper {
-        padding: 25px 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
 
     .view-inventory-cta-button,
     .get-a-quote-cta-button,
     .value-your-trade-cta-button,
     .get-preapproved-cta-button {
-        width: 100%;
-        font-size: 14px;
+        width: 350px;
+        height: 56px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    /* Image wrappers */
+    .versatility-main-content {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .performance-main-content {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #exterior,
+    #interior {
+        font-size: 20px;
+    }
+
     .ver-sec-1-left-img-wrapper,
     .ver-sec-1-right-img-wrapper,
     .ver-sec-2-left-img-wrapper,
@@ -1715,43 +1904,64 @@ h3 {
     .bap-right-img-wrapper,
     .bap-2-left-img-wrapper,
     .bap-2-right-img-wrapper {
-        height: 200px;
+        height: 180px;
     }
 
-    /* Technology image wrappers */
     .tech-sec-1-img-wrapper,
     .tech-sec-2-img-wrapper,
     .tech-sec-3-img-wrapper,
     .tech-sec-4-img-wrapper,
     .tech-sec-5-img-wrapper,
     .tech-sec-6-img-wrapper {
-        height: 250px;
+        height: 200px;
     }
 
-    /* Car features */
+    .perf-sec-img-wrapper {
+        margin: 15px auto;
+    }
+
     .car-desc-name {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
     }
 
     .feature {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
     }
 
     .feature-1, .feature-2, .feature-3, .feature-4 {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    /* Disclaimers */
-    .disclaimers-section {
-        margin: 30px 15px;
         font-size: 11px;
         text-align: center;
     }
 
-    /* Ensure all text is centered */
+    .car-features-wrapper {
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .accessory-packs-subsection {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 25px 15px;
+    }
+
+    .build-and-price-section {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    #bap-header-text {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .disclaimers-section {
+        margin: 25px 10px 20px;
+        font-size: 11px;
+        text-align: center;
+    }
+
     .ver-sec-1-desc,
     .ver-sec-2-desc,
     .ver-sec-3-desc,
@@ -1767,14 +1977,122 @@ h3 {
     .acce-pack-desc,
     .bap-desc,
     .car-desc-subtext,
-    #exterior,
-    #interior,
     #performance-subheader-text,
     #outbound-subheader-text,
     #acce-pack-head-subtext {
         text-align: center;
-        padding: 0 5px;
         font-size: 11px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
-}
 
+    .versatility-section-2 {
+        margin-top: 30px;
+    }
+
+    .ver-1-img-wrapper, .ver-3-img-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .ver-sec-1-left-img-wrapper {
+        margin-top: 10px;
+    }
+
+    .ver-sec-1-right-img-wrapper, .ver-sec-3-left-img-wrapper {
+        margin-top: -10px;
+    }
+
+    .versatility-section-3 {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: auto;
+    }
+
+    .versatility-section-4 {
+        margin-top: 30px;
+    }
+
+    .capability-section-1, .capability-section-2 {
+        width: 330px;
+        gap: 20px;
+    }
+
+    .capability-section-2 {
+        margin-top: 20px;
+    }
+
+    .technology-section-1, .technology-section-2, .technology-section-3,
+    .technology-section-4, .technology-section-5, .technology-section-6 {
+        width: calc(100% - 40px);
+        margin: 20px;
+        padding: 0 0 10px 0;
+    }
+
+    .technology-section-2, .technology-section-4, .technology-section-6 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #performance-header-text, #outbound-header-text, #capability-header-text,
+    #technology-header-text, #bap-header-text {
+        font-size: 36px;
+    }
+
+    .perf-sec-img-wrapper {
+        margin-top: 25px;
+    }
+
+    .car-desc-wrapper {
+        margin-top: 0px;
+    }
+
+    .car-desc-subtext {
+        width: 75%;
+    }
+
+    #outbound-header-text {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 10px;
+    }
+
+    #outbound-subheader-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #acce-pack-head-text {
+        margin-bottom: 20px;
+    }
+
+    .acce-pack-desc {
+        width: 360px;
+    }
+
+    #bap-header-text {
+        margin-bottom: 50px;
+    }
+
+    .bap-sec-main-content-1, .bap-sec-main-content-2 {
+        gap: 50px;
+    }
+
+    .bap-sec-main-content-2 {
+        margin-top: 50px;
+    }
+
+    .hero-cta {
+        width: 100%;
+    }
+
+    .disclaimers-section {
+        font-size: 10px;
+        text-align: left;
+        margin: 20px;
+    }
+
+    .disclaimers-section p {
+        margin-bottom: 15px;
+    }
+
+}
