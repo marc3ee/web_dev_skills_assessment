@@ -82,6 +82,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration-line: none;
 }
 
 /* Section Styles */
@@ -486,6 +487,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration-line: none;
 }
 
 /* Capability Section Styles */
@@ -678,6 +680,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration-line: none;
 }
 
 /* Technology Section Styles */
@@ -771,6 +774,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration-line: none;
 }
 
 /* Performance Section Styles */
@@ -898,6 +902,7 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
+    text-decoration-line: none;
 }
 
 /* Outbound Section Styles */
