@@ -767,3 +767,130 @@ h3 {
     text-transform: uppercase;
     font-weight: 600;
 }
+
+/* Performance Section Styles */
+
+.performance-head {
+    height: auto;
+    width: 100%;
+    background-color: var(--versatility-head-bg-color);
+    color: var(--white-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.performance-main-content {
+    height: auto;
+    width: 100%;
+    background-color: var(--versatility-main-content-bg-color);
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#performance-header-text {
+    text-align: center;
+    color: var(--white-text-color);
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#performance-subheader-text {
+    text-align: center;
+    color: var(--white-text-color);
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+.perf-sec-img-wrapper {
+    height: 340px;
+    margin: 50px auto;
+    width: 50%;
+    overflow: hidden;
+}
+
+.perf-sec-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 50%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.car-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -30px;
+    width: 95%;
+}
+
+.car-desc-name {
+    font-weight: 500;
+    color: var(--white-text-color);
+    font-size: 24px;
+}
+
+.car-desc-subtext {
+    color: var(--white-text-color);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.car-features-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 35px;
+    /*border: white 1px solid;*/
+}
+
+.feature-1, .feature-2, .feature-3, .feature-4 {
+    text-align: center;
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.feature {
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Get Pre-Approved CTA Styles */
+
+.get-preapproved-cta-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cta-bg-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 80px;
+    margin-top: 80px
+}
+
+.get-preapproved-cta-button {
+    width: 300px;
+    height: 60px;
+    background-color: var(--cta-button-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--white-text-color);
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
