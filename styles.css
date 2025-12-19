@@ -19,6 +19,10 @@ body {
     background-color: #FFFFFF;
 }
 
+h2 {
+    font-size: 14px;
+}
+
 /* Hero Section Styles */
 
 .hero-section {
@@ -47,14 +51,14 @@ body {
 .hero-text h1 {
     margin-bottom: 15px;
     font-family: var(--font-family);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 50px;
 }
 
 .hero-text p {
     font-family: var(--font-family);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .hero-cta {
@@ -144,7 +148,7 @@ body {
     padding-bottom: 80px;
 }
 
-h2 {
+h3 {
     text-align: center;
     color: var(--white-text-color);
     font-size: 36px;
@@ -968,6 +972,7 @@ h2 {
     margin-top: 20px;
     text-transform: none;
     font-size: 14px;
+    text-align: center;
 }
 
 .acce-pack-main-content {
@@ -1460,10 +1465,10 @@ h2 {
 
 @media (max-width: 768px) {
 
-    h2 {
+    /* h2 {
         font-size: 28px;
         text-align: center;
-    }
+    }*/
 
     .section-text-wrapper {
         font-size: 24px;
@@ -1787,12 +1792,12 @@ h2 {
         margin: 15px;
     }
 
-    h2 {
+    /* h2 {
         font-size: 32px;
         text-align: center;
         padding: 0 10px;
         margin-bottom: 15px;
-    }
+    } */
 
     .section-text-wrapper {
         font-size: 20px;
@@ -2033,7 +2038,7 @@ h2 {
         flex-direction: column-reverse;
     }
 
-    #performance-header-text, #outbound-header-text, #capability-header-text,
+    #versatility-header-text, #performance-header-text, #outbound-header-text, #capability-header-text,
     #technology-header-text, #bap-header-text {
         font-size: 36px;
     }
