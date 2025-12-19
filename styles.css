@@ -41,6 +41,7 @@ body {
     position: absolute;
     top: 50px;
     left: 45px;
+    z-index: 1;
 }
 
 .hero-text h1 {
@@ -1198,3 +1199,582 @@ h3 {
     margin-bottom: 20px;
     line-height: 1.5;
 }
+
+/* =========================
+   RESPONSIVE ADJUSTMENTS
+   ========================= */
+
+/* ---------- Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+
+    /* Global spacing */
+    .section,
+    .versatility-main-content,
+    .performance-main-content {
+        padding: 50px 30px;
+    }
+
+    /* Hero */
+    .hero-text {
+        left: 30px;
+        top: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-cta {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+        padding: 30px;
+        justify-content: center;
+    }
+
+    .cta-1, .cta-2, .cta-3, .cta-4 {
+        width: 48%;
+        min-width: 280px;
+    }
+
+    /* Section details */
+    .section-details-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section-details-1, .section-details-2, .section-details-3, .section-details-4 {
+        width: 45%;
+        min-width: 300px;
+    }
+
+    /* Two-column sections become stacked */
+    .versatility-section-1,
+    .versatility-section-2,
+    .versatility-section-4,
+    .capability-section-1 {
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .ver-sec-1-left,
+    .ver-sec-1-right,
+    .ver-sec-2-left,
+    .ver-sec-2-right,
+    .ver-sec-4-left,
+    .ver-sec-4-right,
+    .cap-sec-1-left,
+    .cap-sec-1-right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Three-column sections become two */
+    .versatility-section-3,
+    .capability-section-2,
+    .acce-pack-main-content,
+    .bap-sec-main-content-1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .ver-sec-3-left,
+    .ver-sec-3-middle,
+    .ver-sec-3-right,
+    .cap-sec-2-left,
+    .cap-sec-2-middle,
+    .cap-sec-2-right,
+    .acce-pack-left,
+    .acce-pack-middle,
+    .acce-pack-right,
+    .bap-left,
+    .bap-middle,
+    .bap-right {
+        width: 48%;
+        min-width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Technology sections stack image + text */
+    .technology-section-1,
+    .technology-section-2,
+    .technology-section-3,
+    .technology-section-4,
+    .technology-section-5,
+    .technology-section-6 {
+        flex-direction: column;
+        padding: 30px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .tech-sec-1-img-wrapper,
+    .tech-sec-2-img-wrapper,
+    .tech-sec-3-img-wrapper,
+    .tech-sec-4-img-wrapper,
+    .tech-sec-5-img-wrapper,
+    .tech-sec-6-img-wrapper {
+        height: auto;
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .tech-sec-1-content,
+    .tech-sec-2-content,
+    .tech-sec-3-content,
+    .tech-sec-4-content,
+    .tech-sec-5-content,
+    .tech-sec-6-content {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Performance section */
+    .perf-sec-img-wrapper {
+        width: 80%;
+        height: auto;
+    }
+
+    .car-features-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        width: 45%;
+        min-width: 200px;
+    }
+
+    /* Outbound */
+    .oub-sec-img-wrapper {
+        width: 90%;
+        height: auto;
+    }
+
+    /* BAP sections */
+    .bap-sec-main-content-2 {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .bap-2-left, .bap-2-right {
+        width: 48%;
+        min-width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Center text elements */
+    .ver-sec-1-text,
+    .ver-sec-1-desc,
+    .ver-sec-2-text,
+    .ver-sec-2-desc,
+    .ver-sec-3-text,
+    .ver-sec-3-desc,
+    .ver-sec-4-text,
+    .ver-sec-4-desc,
+    .cap-sec-1-text,
+    .cap-sec-1-desc,
+    .cap-sec-2-text,
+    .cap-sec-2-desc,
+    .acce-pack-text,
+    .acce-pack-desc,
+    .bap-text,
+    .bap-desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Center headers */
+    #exterior, #interior, #capability-header-text, #technology-header-text,
+    #performance-header-text, #outbound-header-text, #acce-pack-head-text,
+    #bap-header-text {
+        text-align: center;
+    }
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+@media (max-width: 768px) {
+
+    /* Typography */
+    h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .section-text-wrapper {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero-section {
+        background-color: #000000;
+    }
+
+    .hero-text {
+        position: static;
+        text-align: center;
+        padding: 40px 20px 30px;
+        color: #FFFFFF;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .img-wrapper {
+        height: auto;
+        overflow: visible;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: auto;
+        transform: none;
+        margin-top: 0;
+        display: block;
+    }
+
+    .hero-section .hero-cta {
+        display: none;
+    }
+
+    /* Force all multi-column sections into single column */
+    .section-details-wrapper,
+    .versatility-section-1,
+    .versatility-section-2,
+    .versatility-section-3,
+    .versatility-section-4,
+    .capability-section-1,
+    .capability-section-2,
+    .acce-pack-main-content,
+    .bap-sec-main-content-1,
+    .bap-sec-main-content-2 {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .section-details-1,
+    .section-details-2,
+    .section-details-3,
+    .section-details-4,
+    .ver-sec-1-left,
+    .ver-sec-1-right,
+    .ver-sec-2-left,
+    .ver-sec-2-right,
+    .ver-sec-3-left,
+    .ver-sec-3-middle,
+    .ver-sec-3-right,
+    .ver-sec-4-left,
+    .ver-sec-4-right,
+    .cap-sec-1-left,
+    .cap-sec-1-right,
+    .cap-sec-2-left,
+    .cap-sec-2-middle,
+    .cap-sec-2-right,
+    .acce-pack-left,
+    .acce-pack-middle,
+    .acce-pack-right,
+    .bap-left,
+    .bap-middle,
+    .bap-right,
+    .bap-2-left,
+    .bap-2-right {
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Section spacing */
+    .section {
+        padding: 40px 20px;
+    }
+
+    /* Images scale better */
+    .ver-1-img-wrapper,
+    .ver-3-img-wrapper,
+    .perf-sec-img-wrapper {
+        height: auto;
+        width: 100%;
+    }
+
+    .ver-1-img-wrapper img,
+    .ver-3-img-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* CTA buttons */
+    .view-inventory-cta-button,
+    .get-a-quote-cta-button,
+    .value-your-trade-cta-button,
+    .get-preapproved-cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Performance */
+    .perf-sec-img-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .car-features-wrapper {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Technology sections */
+    .technology-section-1,
+    .technology-section-2,
+    .technology-section-3,
+    .technology-section-4,
+    .technology-section-5,
+    .technology-section-6 {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Outbound image */
+    .oub-sec-img-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .oub-sec-img-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Accessory packs */
+    .accessory-packs-subsection {
+        padding: 40px 20px;
+    }
+
+    /* Footer spacing */
+    .disclaimers-section {
+        margin: 50px 20px;
+        text-align: center;
+    }
+
+    /* Center all text elements */
+    #exterior, #interior, #performance-subheader-text,
+    #outbound-subheader-text, #acce-pack-head-subtext,
+    .ver-sec-1-desc, .ver-sec-2-desc, .ver-sec-3-desc, .ver-sec-4-desc,
+    .cap-sec-1-desc, .cap-sec-2-desc, .tech-sec-1-desc, .tech-sec-2-desc,
+    .tech-sec-3-desc, .tech-sec-4-desc, .tech-sec-5-desc, .tech-sec-6-desc,
+    .acce-pack-desc, .bap-desc, .car-desc-subtext {
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* ---------- Small Phones (≤480px) ---------- */
+@media (max-width: 480px) {
+
+    .hero-text {
+        padding: 30px 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 24px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .section-text-wrapper {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Headers and titles */
+    #capability-header-text,
+    #technology-header-text,
+    #performance-header-text,
+    #outbound-header-text,
+    #bap-header-text {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    /* Section text */
+    .ver-sec-1-text,
+    .ver-sec-2-text,
+    .ver-sec-3-text,
+    .ver-sec-4-text,
+    .cap-sec-1-text,
+    .cap-sec-2-text,
+    .tech-sec-1-text,
+    .tech-sec-2-text,
+    .tech-sec-3-text,
+    .tech-sec-4-text,
+    .tech-sec-5-text,
+    .tech-sec-6-text,
+    .acce-pack-text,
+    .bap-text,
+    .car-desc-name {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* CTA sections */
+    .view-inventory-cta-wrapper,
+    .get-a-quote-cta-wrapper,
+    .value-your-trade-cta-wrapper,
+    .get-preapproved-cta-wrapper {
+        padding: 25px 20px;
+    }
+
+    .view-inventory-cta-button,
+    .get-a-quote-cta-button,
+    .value-your-trade-cta-button,
+    .get-preapproved-cta-button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Image wrappers */
+    .ver-sec-1-left-img-wrapper,
+    .ver-sec-1-right-img-wrapper,
+    .ver-sec-2-left-img-wrapper,
+    .ver-sec-2-right-img-wrapper,
+    .ver-sec-3-left-img-wrapper,
+    .ver-sec-3-middle-img-wrapper,
+    .ver-sec-3-right-img-wrapper,
+    .ver-sec-4-left-img-wrapper,
+    .ver-sec-4-right-img-wrapper,
+    .cap-sec-1-left-img-wrapper,
+    .cap-sec-1-right-img-wrapper,
+    .cap-sec-2-left-img-wrapper,
+    .cap-sec-2-middle-img-wrapper,
+    .cap-sec-2-right-img-wrapper,
+    .acce-pack-left-img-wrapper,
+    .acce-pack-middle-img-wrapper,
+    .acce-pack-right-img-wrapper,
+    .bap-left-img-wrapper,
+    .bap-middle-img-wrapper,
+    .bap-right-img-wrapper,
+    .bap-2-left-img-wrapper,
+    .bap-2-right-img-wrapper {
+        height: 200px;
+    }
+
+    /* Technology image wrappers */
+    .tech-sec-1-img-wrapper,
+    .tech-sec-2-img-wrapper,
+    .tech-sec-3-img-wrapper,
+    .tech-sec-4-img-wrapper,
+    .tech-sec-5-img-wrapper,
+    .tech-sec-6-img-wrapper {
+        height: 250px;
+    }
+
+    /* Car features */
+    .car-desc-name {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .feature {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .feature-1, .feature-2, .feature-3, .feature-4 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Disclaimers */
+    .disclaimers-section {
+        margin: 30px 15px;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    /* Ensure all text is centered */
+    .ver-sec-1-desc,
+    .ver-sec-2-desc,
+    .ver-sec-3-desc,
+    .ver-sec-4-desc,
+    .cap-sec-1-desc,
+    .cap-sec-2-desc,
+    .tech-sec-1-desc,
+    .tech-sec-2-desc,
+    .tech-sec-3-desc,
+    .tech-sec-4-desc,
+    .tech-sec-5-desc,
+    .tech-sec-6-desc,
+    .acce-pack-desc,
+    .bap-desc,
+    .car-desc-subtext,
+    #exterior,
+    #interior,
+    #performance-subheader-text,
+    #outbound-subheader-text,
+    #acce-pack-head-subtext {
+        text-align: center;
+        padding: 0 5px;
+        font-size: 11px;
+    }
+}
+
